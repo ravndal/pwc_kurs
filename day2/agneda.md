@@ -2,9 +2,9 @@
 
 - Creating an app
 - CodeStyle!
+- MVC vs “minimal api”
 - Configuration
 - HttpClient / Logging / IoC / Extensions
-- MVC vs “minimal api”
 - Unit testing
 - Show and tell: Credential Store 
 - Assignments
