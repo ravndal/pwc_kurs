@@ -1,7 +1,6 @@
 # Agenda
 
-- Linq 
-- More .net
+- More .net | Linq ++
 - Azure services
 - Show and tell: Quest
 - Assignments
