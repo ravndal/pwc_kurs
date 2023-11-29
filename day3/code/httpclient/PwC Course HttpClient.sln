@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CF176565-D871-4078-835E-A061D4B3F73C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PwC.Course.HttpStuff", "src\PwC.Course.HttpStuff\PwC.Course.HttpStuff.csproj", "{0C0CBBD3-FDED-4CA2-AD71-92D04BC09873}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PwC.Course.HttpStufff.Tests", "src\PwC.Course.HttpStufff.Tests\PwC.Course.HttpStufff.Tests.csproj", "{69535E4F-143F-4107-B4B9-F70CCFF0259A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C0CBBD3-FDED-4CA2-AD71-92D04BC09873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C0CBBD3-FDED-4CA2-AD71-92D04BC09873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C0CBBD3-FDED-4CA2-AD71-92D04BC09873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C0CBBD3-FDED-4CA2-AD71-92D04BC09873}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69535E4F-143F-4107-B4B9-F70CCFF0259A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69535E4F-143F-4107-B4B9-F70CCFF0259A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69535E4F-143F-4107-B4B9-F70CCFF0259A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69535E4F-143F-4107-B4B9-F70CCFF0259A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0C0CBBD3-FDED-4CA2-AD71-92D04BC09873} = {CF176565-D871-4078-835E-A061D4B3F73C}
+		{69535E4F-143F-4107-B4B9-F70CCFF0259A} = {CF176565-D871-4078-835E-A061D4B3F73C}
+	EndGlobalSection
+EndGlobal

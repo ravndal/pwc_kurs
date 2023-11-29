@@ -1,0 +1,10 @@
+@PwC.Krus.Foo.Host_HostAddress = https://localhost:7289
+
+GET {{PwC.Krus.Foo.Host_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{PwC.Krus.Foo.Host_HostAddress}}/foo
+
+###

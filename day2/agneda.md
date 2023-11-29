@@ -4,9 +4,8 @@
 - CodeStyle!
 - MVC vs “minimal api”
 - Configuration
-- HttpClient / Logging / IoC / Extensions
-- Unit testing
-- Show and tell: Credential Store 
+- Build and deploy in PwC
+- IoC / Extensions
 - Assignments
 
 
