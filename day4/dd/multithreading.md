@@ -22,3 +22,4 @@ Mainly important for GUI applications. `SynchronizationContext` class allows syn
 Managing long-running or potentially infinite tasks is crucial. The `CancellationToken` and `CancellationTokenSource` classes provide a cooperative cancellation model.
 
 
+ca
