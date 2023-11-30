@@ -1,16 +1,25 @@
 public class TPL
 {
+    //private static readonly object Lock = new object();  
+    private static readonly SemaphoreSlim SemaphoreLock = new(5);
+
 
     public static Task RunExample1()
     {
         var tasks = new List<Task>();
+
         for (var i = 0; i < 10; i++)
         {
-            var task = Task.Run(() =>
+            var task = Task.Run(async () =>
             {
+                //await SemaphoreLock.WaitAsync();
+
                 Console.WriteLine($"Task {Task.CurrentId} starting...");
                 Thread.Sleep(1000);
                 Console.WriteLine($"Task {Task.CurrentId} finished.");
+
+                //SemaphoreLock.Release();
+
             });
             tasks.Add(task);
         }
@@ -40,12 +49,14 @@ public class TPL
                 Console.WriteLine("Parent task 1 starting.");
                 // Child tasks
                 var childTasks = new Task[2];
-                childTasks[0] = Task.Factory.StartNew(async () => {
+                childTasks[0] = Task.Factory.StartNew(async () =>
+                {
                     Console.WriteLine("Child task 1 starting");
                     await Task.Delay(Random.Shared.Next(1000, 2000));
                     Console.WriteLine("Child task 1 complete");
                 }, TaskCreationOptions.AttachedToParent);
-                childTasks[1] = Task.Factory.StartNew(async () => {
+                childTasks[1] = Task.Factory.StartNew(async () =>
+                {
                     Console.WriteLine("Child task 2 starting");
                     await Task.Delay(Random.Shared.Next(1000, 2000));
                     Console.WriteLine("Child task 2 complete");
